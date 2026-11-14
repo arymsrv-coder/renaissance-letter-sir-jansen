@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sir Jansen on Stage · Ren[AI]ssance Gallery</title>
+<meta name="description" content="Every photo of Sir Jansen from the Ren[AI]ssance seminar, in photo strips.">
+<meta name="theme-color" content="#0b1a11">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sir Jansen on Stage · Ren[AI]ssance Gallery">
+<meta property="og:description" content="Every photo from his talk, in Ren[AI]ssance photo strips.">
+<meta property="og:image" content="https://arymsrv-coder.github.io/renaissance-letter-sir-jansen/strips/featured-s.jpg">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="gallery-page">
+<div class="backdrop" aria-hidden="true"></div>
+
+<nav class="gbar" aria-label="Gallery navigation">
+  <a class="back" href="index.html#letter"><span aria-hidden="true">←</span> The letter</a>
+  <img src="assets/logo.png" width="2005" height="419" alt="Ren[AI]ssance">
+</nav>
+
+<header class="ghead">
+  <p class="kicker">The gallery</p>
+  <h1>Sir Jansen, on stage</h1>
+  <p class="ghead-sub">Every moment we captured of you, set in Ren<span class="ai">[AI]</span>ssance photo strips.</p>
+  <div class="tabs" role="tablist" aria-label="View">
+    <button role="tab" id="tab-strips" aria-selected="true" aria-controls="grid-strips" class="tab on">Photo strips <small id="count-strips"></small></button>
+    <button role="tab" id="tab-photos" aria-selected="false" aria-controls="grid-photos" class="tab">All photos <small id="count-photos"></small></button>
+  </div>
+</header>
+
+<main>
+  <section id="grid-strips" class="strip-grid" role="tabpanel" aria-labelledby="tab-strips"></section>
+  <section id="grid-photos" class="photo-grid" role="tabpanel" aria-labelledby="tab-photos" hidden></section>
+</main>
+
+<footer class="site-foot">
+  <p>Ren<span class="ai">[AI]</span>ssance · Rebirth of Mind, Dawn of Machine</p>
+  <p class="muted">Tap any strip or photo to enlarge it and save it.</p>
+</footer>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lb-close" id="lb-close" aria-label="Close">×</button>
+  <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">‹</button>
+  <figure class="lb-stage">
+    <img id="lb-img" alt="">
+    <figcaption><span id="lb-cap"></span><a id="lb-dl" class="btn btn-solid" download>Save</a></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lb-next" aria-label="Next">›</button>
+</div>
+
+<script src="js/gallery.js"></script>
+</body>
+</html>
